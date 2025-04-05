@@ -1,0 +1,31 @@
+!! Colorscheme
+!! I3 Sources these values
+*.foreground: #dadada
+*.background: #232a2d
+*.cursorColor: #6cbfbf
+*.color0: #141b1e
+*.color8: #232a2d
+*.color1: #e57474
+*.color9: #e57474
+*.color2: #8ccf7e
+*.color10: #8ccf7e
+*.color3: #e5c76b
+*.color11: #e5c76b
+*.color4: #67b0e8
+*.color12: #67b0e8
+*.color5: #c47fd5
+*.color13: #c47fd5
+*.color6: #6cbfbf
+*.color14: #6cbfbf
+*.color7: #dadada
+*.color15: #dadada
+
+!!Application specific
+i3wm.font: xft:Noto Sans 12
+i3wm.dmenu_font: Noto Sans:pixelsize=16
+URxvt.font: xft:Oxygen Mono:style=Regular:size=12
+URxvt.scrollBar: false
+URxvt.depth: 32
+URxvt.background: [80]#232a2d
+
+
