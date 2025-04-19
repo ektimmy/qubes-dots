@@ -32,4 +32,9 @@
 	base07: #dadada;
 	base0F: #dadada;
 
+	
+	baseA0: #141b1ecc;
+	baseA8: #232a2dcc;
+	baseA6: #6cbfbf99;
+	baseAA: rgba(0, 0, 0, 0.0);
 }

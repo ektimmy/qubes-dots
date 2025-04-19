@@ -26,6 +26,6 @@ i3wm.dmenu_font: Noto Sans:pixelsize=16
 URxvt.font: xft:Oxygen Mono:style=Regular:size=12
 URxvt.scrollBar: false
 URxvt.depth: 32
-URxvt.background: [80]#232a2d
+!!URxvt.background: [80]#232a2d
 
 

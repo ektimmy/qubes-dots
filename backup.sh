@@ -9,9 +9,13 @@ declare -a FILES=(
 	$HOME"/.wallpaper_backup.png"
 	$HOME"/.config/rofi/scripts/app_launcher.sh"
 	$HOME"/.config/rofi/themes/terminals.rasi"
+	$HOME"/.config/rofi/themes/terminals.png"
 	$HOME"/.config/rofi/themes/firefox.rasi"
+	$HOME"/.config/rofi/themes/firefox.png"
+	$HOME"/.config/rofi/themes/thunar.rasi"
+	$HOME"/.config/rofi/themes/thunar.png"
 	$HOME"/.config/rofi/themes/shared/style.rasi"
-
+	$HOME"/.config/picom.conf"
 )
 COUNTER=0
 for i in "${FILES[@]}"; do

@@ -23,7 +23,7 @@ listview {
 	scrollbar:		false;
 	background-color:	@base00;
 	padding:		10px;		
-	background-image:	url("./terminals.png", height);
+	background-image:	url("./thunar.png", height);
 }
 element {
 	padding:		5%;

@@ -29,6 +29,7 @@ get_vm() {
 case "$1" in 
 	"terminal")	config='terminals.rasi'; app='rxvt-unicode'; dom0_app='urxvt';;
 	"browser")	config='firefox.rasi'; app='org.mozilla.firefox';dom0_app='firefox';;
+	"files")	config='thunar.rasi'; app='thunar'; dom0_app='thunar';;	
 	*)		echo "The following options are available: terminal or browser"; return 127;;
 esac
 
