@@ -28,31 +28,31 @@ set_from_resource	$bkgd		i3wm.background
 client.background       dom0            $bkgd
 client.focused          dom0    $cyan	$cyan	$bkgd	$bkgd
 client.focused_inactive dom0    $cyan	$bkgd	$cyan	$bkgd
-client.unfocused        dom0    $bkgd	$bkgd	$cyan	$bkgd
+client.unfocused        dom0    $black	$black	$cyan	$bkgd
 client.urgent           dom0    $red	$bkgd	$cyan	$red
 
 client.background       red             $bkgd
 client.focused          red     $red	$red	$bkgd	$bkgd
 client.focused_inactive red     $red	$bkgd	$red	$bkgd
-client.unfocused        red     $bkgd	$bkgd	$red	$bkgd
+client.unfocused        red     $black	$black	$red	$bkgd
 client.urgent           red     $red	$bkgd	$red	$red
 
 client.background       orange          $bkgd
 client.focused          orange  $white	$white	$bkgd	$bkgd
 client.focused_inactive orange  $white	$bkgd	$white	$bkgd
-client.unfocused        orange  $bkgd	$bkgd	$white	$bkgd
+client.unfocused        orange  $black	$black	$white	$bkgd
 client.urgent           orange  $red	$bkgd	$white	$red
 
 client.background       yellow          $bkgd
 client.focused          yellow  $yellow $yellow $bkgd	$bkgd
 client.focused_inactive yellow  $yellow	$bkgd	$yellow	$bkgd
-client.unfocused        yellow  $bkgd	$bkgd	$yellow	$bkgd
+client.unfocused        yellow  $black	$black	$yellow	$bkgd
 client.urgent           yellow  $red	$bkgd 	$yellow	$red
 
 client.background       green           $bkgd
 client.focused          green   $green	$green	$bkgd	$bkgd
 client.focused_inactive green   $green	$bkgd	$green	$bkgd
-client.unfocused        green   $bkgd	$bkgd	$green	$bkgd
+client.unfocused        green   $black	$black	$green	$bkgd
 client.urgent           green   $red	$bkgd	$green	$red
 
 #Launcher keybinds

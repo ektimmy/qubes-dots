@@ -38,3 +38,9 @@
 	baseA6: #6cbfbf99;
 	baseAA: rgba(0, 0, 0, 0.0);
 }
+
+configuration {
+	kb-row-down: "j";
+	kb-row-up: "k";
+}
+ 
