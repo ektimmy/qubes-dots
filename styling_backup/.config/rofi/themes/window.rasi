@@ -1,0 +1,63 @@
+/**
+* This is a theme intended to launch qubes terminals 
+*/
+@import				"shared/style.rasi"
+
+window {
+	padding: 		5px;
+	border-radius: 		10px;
+	location:		east;
+	height:			80%;
+	width:			30%;
+	background-color: 	@baseA6;	 
+	x-offset:		-10;
+}
+mainbox {
+	border-radius: 		5px;	
+	children:		[ "listview" ];
+}
+listview {
+	border:			0px solid;
+	spacing: 		10px;
+	lines: 			5;
+	scrollbar:		false;
+	background-color:	@base00;
+	padding:		10px;		
+	background-image:	url("./terminals.png", height);
+}
+element {
+	padding:		5%;
+	border-radius:		10px;
+	border:			5px solid;
+}
+element-text {
+	background-color:	inherit;
+}
+/** Pattern 1 */
+element normal.normal{
+	background-color:	@baseA8;
+	border-color:		@baseA8;
+}
+element-text normal.normal {
+	background-color:	@baseAA;
+	text-color:		@base07;
+} 
+
+/** Pattern 2 */
+element alternate.normal,  {
+	background-color:	@baseA0;
+	border-color:		@baseA8;
+}
+element-text alternate.normal {
+	background-color:	@baseAA;
+	text-color:		@base07;
+}
+
+/** Selected Pattern */
+element selected.normal { 
+	background-color:	@base08;
+	border-color:		@base06;
+}
+element-text selected.normal {
+	text-color:		@base06;
+} 

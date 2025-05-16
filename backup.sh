@@ -4,27 +4,18 @@ BACKUPDIR=$HOME"/Desktop/styling_backup"
 
 declare -a FILES=(
 	$HOME"/.Xresources"
-	$HOME"/.config/i3/config"
-	$HOME"/.config/i3/assignments.conf"
+	$HOME"/.config/i3/."
 	$HOME"/.wallpaper_backup.png"
-	$HOME"/.config/rofi/scripts/app_launcher.sh"
-	$HOME"/.config/rofi/themes/terminals.rasi"
-	$HOME"/.config/rofi/themes/terminals.png"
-	$HOME"/.config/rofi/themes/firefox.rasi"
-	$HOME"/.config/rofi/themes/firefox.png"
-	$HOME"/.config/rofi/themes/thunar.rasi"
-	$HOME"/.config/rofi/themes/thunar.png"
-	$HOME"/.config/rofi/themes/shared/style.rasi"
+	$HOME"/.config/rofi/."
 	$HOME"/.config/picom.conf"
+#	$HOME"/.local/share/themes/."
+#	$HOME"/.local/share/icons/."
+	$HOME"/.gtkrc-2.0"
+	$HOME"/.config/gtk-3.0/settings.ini"
 )
-COUNTER=0
+
 for i in "${FILES[@]}"; do
-	if test -f "$i"; then
 		OUTPUT=$(echo "$i" | sed  "s|$HOME|$BACKUPDIR|g" )
-		cp "$i" "$OUTPUT"
-	else 
-		echo "file "$i" does not exist"
-		COUNTER=$(($COUNTER + 1))
-	fi
+		cp -r "$i" "$OUTPUT"
 done
-echo "Backup complete! "$COUNTER" files failed."
+echo "Backup complete!"

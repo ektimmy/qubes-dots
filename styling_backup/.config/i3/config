@@ -232,4 +232,7 @@ gaps bottom 6
 gaps top 6
 
 # Transparency
-exec_always --no-startup-id picom    
+exec_always --no-startup-id picom   
+
+#GTK Theme
+exec --no-startup-id xfsettingsd --sm-client-disable 
