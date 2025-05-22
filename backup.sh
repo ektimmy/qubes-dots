@@ -1,7 +1,7 @@
 #!/bin/bash
+BACKUPDIR="/Desktop"
 
-BACKUPDIR=$HOME"/Desktop/styling_backup"
-
+BACKUPDIR=$HOME$BACKUPDIR"/styling_backup"
 declare -a FILES=(
 	$HOME"/.Xresources"
 	$HOME"/.config/i3/."
@@ -13,7 +13,6 @@ declare -a FILES=(
 	$HOME"/.gtkrc-2.0"
 	$HOME"/.config/gtk-3.0/settings.ini"
 )
-
 for i in "${FILES[@]}"; do
 		OUTPUT=$(echo "$i" | sed  "s|$HOME|$BACKUPDIR|g" )
 		cp -r "$i" "$OUTPUT"
