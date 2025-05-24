@@ -1,7 +1,8 @@
 #!/bin/bash
 
-BACKUPDIR=$HOME"/Desktop/styling_backup"
+BACKUPDIR="/Document/qubes-dots"
 
+BACKUPDIR=$HOME$BACKUPDIR"/xfce_template"
 declare -a FILES=(
 	".Xresources"
 )
