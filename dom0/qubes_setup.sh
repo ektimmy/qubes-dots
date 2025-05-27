@@ -21,6 +21,7 @@ if [[ qvm-ls | grep sys-gui = "" ]]; then
   
   # Updating all qubes app menus in sys-gui
   qvm-run sys-gui xterm --hold --command "qvm-sync appmenus fedora-41"
+  qvm-run sys-gui xterm --hold --command "qvm-sync appmenus disp-vm“
   
   # Hiding xfce session to make sys-gui only login option
   mv /usr/share/xsessions/xfce.desktop /usr/share/xsessions/xfce.desktop.hidden
