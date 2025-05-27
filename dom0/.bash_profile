@@ -9,6 +9,8 @@ fi
 #
 # Setting Aliases
 
+# Keybinds
+bind '"\C-l": "vlock\n"'
 
 # Theming
 sh $HOME/.startup/set_colors.sh
