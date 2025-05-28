@@ -14,6 +14,7 @@ bind '"\C-l": "vlock\n"'
 
 # Theming
 sh $HOME/.startup/set_colors.sh
+setfont $HOME/.startup/OxygenMono-Regular.psf
 
 # Starting Applications
 

@@ -20,8 +20,8 @@ if [[ qvm-ls | grep sys-gui = "" ]]; then
   qubes prefs default_guivm sys-gui
   
   # Updating all qubes app menus in sys-gui
-  qvm-run sys-gui xterm --hold --command "qvm-sync appmenus fedora-41"
-  qvm-run sys-gui xterm --hold --command "qvm-sync appmenus disp-vm“
+  qvm-run sys-gui xterm --hold --command "qvm-sync appmenus fedora-41-xfce"
+  qvm-run sys-gui xterm --hold --command "qvm-sync appmenus default-dvm“
   
   # Hiding xfce session to make sys-gui only login option
   mv /usr/share/xsessions/xfce.desktop /usr/share/xsessions/xfce.desktop.hidden
@@ -34,7 +34,7 @@ if [[ qvm-ls | grep sys-gui = "" ]]; then
 else
   # Ran in tty2 after restart
   # Creating a fedora based themed template 
-  qvm-clone fedora-41 fedora-41-styled
+  qvm-clone fedora-41-xfce fedora-41-styled
   qvm-run fedora-41-styled xterm  --hold --command "sudo dnf install i3 urxvt rofi oxygen-mono-fonts picom qt5-qtstyleplugins"
   qvm-shutdown --wait fedora-41-styled
 

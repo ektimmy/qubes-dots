@@ -12,7 +12,7 @@ Colorscheme - Everblush,\
 System font - Noto Sans,\
 Mono font - Oxygen Mono,\
 Console font - \
-GTK - \ 
+GTK - \
 Icons - \
 Bar - xfce4-panel\
 Compositor - picom
